@@ -1,3 +1,5 @@
+// Import dotenv as early as possible in the runtime.
+import 'dotenv/config'
 import express from 'express';
 
 const app = express();
