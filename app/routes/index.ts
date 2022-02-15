@@ -3,13 +3,14 @@
 // Import express
 import express from 'express';
 
+// Import route controller(s)
+import { IndexController } from '../http/controllers/IndexController';
+
 // Create a router instance for our nested routes.
 const router = express.Router();
 
 // Assign routes to our router
-router.get('/', (req, res) => {
-	res.send("Welcome to Rathma's typescript / express.js template");
-});
+router.get('/', IndexController.index);
 
 // Export the router
 export default router;
