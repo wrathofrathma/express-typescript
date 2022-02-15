@@ -1,9 +1,8 @@
-// Import dotenv as early as possible in the runtime.
-import 'dotenv/config'
+// Import config to setup the global configuration object.
+import { config } from './config'
 import express from 'express';
 
 const app = express();
-const port = 3000;
 
 /** Define routers **/
 import indexRouter from './app/routes/index';
@@ -12,6 +11,6 @@ import indexRouter from './app/routes/index';
 app.use('/', indexRouter);
 
 /** Fire up server **/
-app.listen(port, () => {
+app.listen(config.app.port, () => {
   console.log("Server started");
 });
