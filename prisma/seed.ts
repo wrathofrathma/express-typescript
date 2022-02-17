@@ -1,7 +1,7 @@
 import { PrismaClient } from '@prisma/client'
 const prisma = new PrismaClient()
 
-async function main() {
+async function generateUsers() {
   const alice = await prisma.user.upsert({
     where: { email: 'alice@prisma.io' },
     update: {},
@@ -19,7 +19,29 @@ async function main() {
       name: 'Bob',
     },
   })
-  console.log({ alice, bob })
+}
+
+async function generatePosts() {
+  // Fetch user to associate with the post.
+  const user = await prisma.user.findUnique({
+    where: {
+      email: 'bob@prisma.io'
+    }
+  });
+
+  // Create post
+  await prisma.post.create({
+    data: {
+      title: 'Hello world',
+      content: 'A very interesitng blog',
+      authorId: user.id
+    }
+  })
+
+}
+async function main() {
+  await generateUsers();
+  await generatePosts();
 }
 
 main()
