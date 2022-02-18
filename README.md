@@ -11,6 +11,21 @@ An opinionated project scaffold for a REST API with express / typescript.
 - [custom] Sane project structure with middleware, controllers, routes, configuration, exceptions, services, etc.
 - [ ] Unit testing
 
+# Project Structure
+This project structure is inspired by an older version of Adonis.js. It seemed sane, scalable, and simple.
+
+- ``app/`` - All of the application logic.
+	- ``exceptions/`` - Exceptions & Exception handlers
+	- ``http/``
+		- ``controllers/`` - Route controllers / logic.
+		- ``middleware/`` - All HTTP middleware.
+	- ``routes/`` - Collection of routers/routes.
+	- ``services/`` - Business logic / where the 'how' is implemented.
+- ``config/`` - Dedicated, importable configuration files.
+- ``prisma/`` - Anything to do with prisma database schemas / migrations. 
+- ``server.ts`` - Entry point to the application
+- ``.env`` - Environmental variables loaded by DotEnv.
+
 # Resource links
 Here are some key resource links that I found useful
 ## Express
