@@ -4,10 +4,10 @@ import express from 'express';
 
 const app = express();
 
-/** Define routers **/
+/** Import routers from ``app/routes/index`` **/
 import indexRouter from './app/routes/index';
 
-/** Use routers **/
+/** Configure application to use routers **/
 app.use('/', indexRouter);
 
 /** Global Middleware Example */
@@ -18,7 +18,6 @@ app.use(ExampleMiddleware);
 
 /** Using a custom error handler */
 import ExceptionHandler from './app/exceptions/ExceptionHandler';
-
 app.use(ExceptionHandler);
 
 /** Fire up server **/

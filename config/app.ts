@@ -1,3 +1,6 @@
+/**
+ * Application related configuration
+ */
 export default {
 	/** 
 	The port the web server listens on for connections.
