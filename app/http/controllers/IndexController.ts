@@ -1,5 +1,8 @@
 import { NextFunction, Request, Response } from "express";
 
+/**
+ * Basic controller to handle requests on /
+ */
 export const IndexController = {
 	/**
 	 * Handles the default request on /
@@ -11,6 +14,6 @@ export const IndexController = {
 	index(req: Request, res: Response, next: NextFunction) {
 		res.send("Welcome to Rathma's express.js / typescript template.");
 
-		next();
+		return next();
 	} 
 }

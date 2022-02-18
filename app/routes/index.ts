@@ -1,4 +1,4 @@
-/** Default router business */
+/** Basic router example */
 
 // Import express
 import express from 'express';
@@ -14,6 +14,7 @@ router.get('/', IndexController.index);
 
 // authed example
 import AuthMiddleware from '../http/middleware/AuthMiddleware';
+// Everywhere below here will require authentication.
 router.use(AuthMiddleware);
 router.get('/auth', IndexController.index);
 
