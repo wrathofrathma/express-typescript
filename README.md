@@ -1,11 +1,36 @@
 # Express Typescript Template
-Since there is no default project scaffold for express with typescript, I'm going to build one with the features I want.
+An opinionated project scaffold for a REST API with express / typescript.
 
-# Features
-- [x] Express.js
-- [x] Typescript
-- [x] Hot reloading development environment
-- [x] Global configuration files parsed before startup
-- [x] .env parsing into configuration before startup
+# Technologies & Features
+- [server] Express.js
+- [language] Typescript
+- [nodemon] Hot reloading development environment
+- [dotenv] .env parsing into configuration before startup
+- [custom] Global configuration files parsed before startup
+- [prisma] Database ORM & migrations
+- [custom] Sane project structure with middleware, controllers, routes, configuration, exceptions, services, etc.
 - [ ] Unit testing
-- [ ] Database migrations
+
+# Resource links
+Here are some key resource links that I found useful
+## Express
+- [Express.js](https://expressjs.com/)
+- [Express Routing Guide](https://expressjs.com/en/guide/routing.html)
+- [Express Writing Middleware Guide](https://expressjs.com/en/guide/writing-middleware.html)
+- [Express Using Middleware Guide](https://expressjs.com/en/guide/using-middleware.html)
+- [Express Error Handling](https://expressjs.com/en/guide/error-handling.html)
+- [Express Best Practices: Security](https://expressjs.com/en/advanced/best-practice-security.html)
+- [Express Best Practices: Performance & Reliability](https://expressjs.com/en/advanced/best-practice-performance.html)
+
+
+## Typescript
+- [Google Typescript Style Guide](https://google.github.io/styleguide/tsguide.html)
+- [Typescript Handbook](https://www.typescriptlang.org/docs/handbook/intro.html)
+## Prisma
+- [Adding Prisma to an Existing Project](https://www.prisma.io/docs/getting-started/setup-prisma/add-to-existing-project/relational-databases-typescript-postgres)
+- [Prisma Concepts](https://www.prisma.io/docs/concepts)
+- [Prisma Migrate](https://www.prisma.io/docs/concepts/components/prisma-migrate)
+- [Prisma Seeding Your Database](https://www.prisma.io/docs/guides/database/seed-database)
+- [Prisma Schema Reference](https://www.prisma.io/docs/reference/api-reference/prisma-schema-reference)
+- [Prisma Generating the Client](https://www.prisma.io/docs/concepts/components/prisma-client/working-with-prismaclient/generating-prisma-client)
+- [Prisma Data Model](https://www.prisma.io/docs/concepts/components/prisma-schema/data-model)
