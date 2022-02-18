@@ -4,7 +4,7 @@ import 'dotenv/config';
 import app from './app';
 
 
-/** Configuration object */
+/** Configuration loaded from ``config/`` & environmental variables */
 export const config = {
 	app
 }
