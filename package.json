@@ -4,7 +4,7 @@
   "description": "A sane template for express.js with typescript",
   "main": "index.js",
   "prisma": {
-    "seed": "ts-node prisma/seed.ts"
+    "seed": "npx ts-node prisma/seed.ts"
   },
   "scripts": {
     "dev": "nodemon server.ts"
