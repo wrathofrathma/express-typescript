@@ -4,6 +4,10 @@ import express from 'express';
 
 const app = express();
 
+/** Setup request body parsing */
+import bodyParser from 'body-parser';
+app.use(bodyParser.json());
+
 /** Import routers from ``app/routes/index`` **/
 import indexRouter from './app/routes/index';
 
