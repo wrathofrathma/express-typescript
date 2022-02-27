@@ -9,7 +9,7 @@ An opinionated project scaffold for a REST API with express / typescript.
 - [custom] Global configuration files parsed before startup
 - [prisma] Database ORM & migrations
 - [custom] Sane project structure with middleware, controllers, routes, configuration, exceptions, services, etc.
-- [ ] Unit testing
+- [japa] Unit testing with japa, supertest, and jest expectations.
 
 # Project Structure
 This project structure is inspired by an older version of Adonis.js. It seemed sane, scalable, and simple.
@@ -21,9 +21,12 @@ This project structure is inspired by an older version of Adonis.js. It seemed s
 		- ``middleware/`` - All HTTP middleware.
 	- ``routes/`` - Collection of routers/routes.
 	- ``services/`` - Business logic / where the 'how' is implemented.
+- ``bin/`` - Japa unit test runner
 - ``config/`` - Dedicated, importable configuration files.
 - ``prisma/`` - Anything to do with prisma database schemas / migrations. 
-- ``server.ts`` - Entry point to the application
+- ``tests/`` - Unit tests
+- ``app.ts`` - Entry point to the application
+- ``server.ts`` - Starts the server / event loop.
 - ``.env`` - Environmental variables loaded by DotEnv.
 
 # Resource links
@@ -41,6 +44,7 @@ Here are some key resource links that I found useful
 ## Typescript
 - [Google Typescript Style Guide](https://google.github.io/styleguide/tsguide.html)
 - [Typescript Handbook](https://www.typescriptlang.org/docs/handbook/intro.html)
+
 ## Prisma
 - [Adding Prisma to an Existing Project](https://www.prisma.io/docs/getting-started/setup-prisma/add-to-existing-project/relational-databases-typescript-postgres)
 - [Prisma Concepts](https://www.prisma.io/docs/concepts)
@@ -49,3 +53,8 @@ Here are some key resource links that I found useful
 - [Prisma Schema Reference](https://www.prisma.io/docs/reference/api-reference/prisma-schema-reference)
 - [Prisma Generating the Client](https://www.prisma.io/docs/concepts/components/prisma-client/working-with-prismaclient/generating-prisma-client)
 - [Prisma Data Model](https://www.prisma.io/docs/concepts/components/prisma-schema/data-model)
+
+## Unit Testing
+- [Japa.dev's documentation website](https://japa.dev/)
+- [Supertest documentation](https://www.npmjs.com/package/supertest)
+- [Jest documentation for expectations](https://jestjs.io/docs/expect)
