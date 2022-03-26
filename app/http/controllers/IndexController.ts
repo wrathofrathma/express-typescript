@@ -15,5 +15,5 @@ export const IndexController = {
 		res.send("Welcome to Rathma's express.js / typescript template.");
 
 		return next();
-	} 
+	}
 }
