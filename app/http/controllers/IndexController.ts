@@ -16,9 +16,4 @@ export const IndexController = {
 
     return next();
   },
-  indexi(req: Request, res: Response, next: NextFunction) {
-    res.send("Welcome to Rathma's express.js / typescript template.");
-
-    return next();
-  },
 };
