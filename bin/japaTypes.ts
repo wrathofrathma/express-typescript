@@ -1,9 +1,9 @@
-import { Expect } from '@japa/expect'
+import { Expect } from "@japa/expect";
 
-declare module '@japa/runner' {
+declare module "@japa/runner" {
   interface TestContext {
     // notify TypeScript about custom context properties
-    expect: Expect
+    expect: Expect;
   }
 
   interface Test<Context, TestData> {

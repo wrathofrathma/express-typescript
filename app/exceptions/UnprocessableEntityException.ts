@@ -6,7 +6,7 @@ import BaseException from "./BaseException";
  * Contains a default error message and sets the HTTP response status.
  */
 export default class UnprocessableEntityException extends BaseException {
-    constructor(message: string = "Unprocessable Entity") {
-        super(message, 422);
-    }
+  constructor(message: string = "Unprocessable Entity") {
+    super(message, 422);
+  }
 }

@@ -1,4 +1,4 @@
-import { app, config } from './app';
+import { app, config } from "./app";
 
 /** Fire up server **/
 app.listen(config.app.port, () => {

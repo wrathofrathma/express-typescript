@@ -1,7 +1,9 @@
 # Express Typescript Template
+
 An opinionated project scaffold for a REST API with express / typescript.
 
 # Technologies & Features
+
 - [server] Express.js
 - [language] Typescript
 - [nodemon] Hot reloading development environment
@@ -12,26 +14,30 @@ An opinionated project scaffold for a REST API with express / typescript.
 - [japa] Unit testing with japa, supertest, and jest expectations.
 
 # Project Structure
+
 This project structure is inspired by an older version of Adonis.js. It seemed sane, scalable, and simple.
 
-- ``app/`` - All of the application logic.
-	- ``exceptions/`` - Exceptions & Exception handlers
-	- ``http/``
-		- ``controllers/`` - Route controllers / logic.
-		- ``middleware/`` - All HTTP middleware.
-	- ``routes/`` - Collection of routers/routes.
-	- ``services/`` - Business logic / where the 'how' is implemented.
-- ``bin/`` - Japa unit test runner
-- ``config/`` - Dedicated, importable configuration files.
-- ``prisma/`` - Anything to do with prisma database schemas / migrations. 
-- ``tests/`` - Unit tests
-- ``app.ts`` - Entry point to the application
-- ``server.ts`` - Starts the server / event loop.
-- ``.env`` - Environmental variables loaded by DotEnv.
+- `app/` - All of the application logic.
+  - `exceptions/` - Exceptions & Exception handlers
+  - `http/`
+    - `controllers/` - Route controllers / logic.
+    - `middleware/` - All HTTP middleware.
+  - `routes/` - Collection of routers/routes.
+  - `services/` - Business logic / where the 'how' is implemented.
+- `bin/` - Japa unit test runner
+- `config/` - Dedicated, importable configuration files.
+- `prisma/` - Anything to do with prisma database schemas / migrations.
+- `tests/` - Unit tests
+- `app.ts` - Entry point to the application
+- `server.ts` - Starts the server / event loop.
+- `.env` - Environmental variables loaded by DotEnv.
 
 # Resource links
+
 Here are some key resource links that I found useful
+
 ## Express
+
 - [Express.js](https://expressjs.com/)
 - [Express Routing Guide](https://expressjs.com/en/guide/routing.html)
 - [Express Writing Middleware Guide](https://expressjs.com/en/guide/writing-middleware.html)
@@ -40,12 +46,13 @@ Here are some key resource links that I found useful
 - [Express Best Practices: Security](https://expressjs.com/en/advanced/best-practice-security.html)
 - [Express Best Practices: Performance & Reliability](https://expressjs.com/en/advanced/best-practice-performance.html)
 
-
 ## Typescript
+
 - [Google Typescript Style Guide](https://google.github.io/styleguide/tsguide.html)
 - [Typescript Handbook](https://www.typescriptlang.org/docs/handbook/intro.html)
 
 ## Prisma
+
 - [Adding Prisma to an Existing Project](https://www.prisma.io/docs/getting-started/setup-prisma/add-to-existing-project/relational-databases-typescript-postgres)
 - [Prisma Concepts](https://www.prisma.io/docs/concepts)
 - [Prisma Migrate](https://www.prisma.io/docs/concepts/components/prisma-migrate)
@@ -55,6 +62,7 @@ Here are some key resource links that I found useful
 - [Prisma Data Model](https://www.prisma.io/docs/concepts/components/prisma-schema/data-model)
 
 ## Unit Testing
+
 - [Japa.dev's documentation website](https://japa.dev/)
 - [Supertest documentation](https://www.npmjs.com/package/supertest)
 - [Jest documentation for expectations](https://jestjs.io/docs/expect)

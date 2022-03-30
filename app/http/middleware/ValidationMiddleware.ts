@@ -9,20 +9,20 @@ import UnprocessableEntityException from "../../exceptions/UnprocessableEntityEx
  *
  * @throws UnprocessableEntityException
  */
-const validate = (schema: AnyZodObject) =>
-	async (req: Request, res: Response, next: NextFunction) => {
-		try {
-			await schema.parseAsync({
-				body: req.body,
-				query: req.query,
-				params: req.params
-			});
+const validate =
+  (schema: AnyZodObject) =>
+  async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      await schema.parseAsync({
+        body: req.body,
+        query: req.query,
+        params: req.params,
+      });
 
-			return next();
-		}
-		catch (e) {
-			return next(new UnprocessableEntityException(String(e)));
-		}
-	}
+      return next();
+    } catch (e) {
+      return next(new UnprocessableEntityException(String(e)));
+    }
+  };
 
 export default validate;
